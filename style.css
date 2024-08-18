@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+html{
+    margin: 4vh 5vw 0vh 5vw;
+    padding: 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #600a71;
+    line-height: 150%;
+}
+
+body{
+    background: #cf79f7;
+}
+
+#main-container{
+    height: 88vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.main-boxes{
+    margin: 15px;
+}
+
+#box-logo{
+    display: block;
+}
+
+#box-interaction{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.box-interaction-format{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-input-format{
+    width: 75%;
+}
+
+#box-input{
+    height: 81%;
+}
+#box-input2{
+    height: 19%;
+    margin-bottom: 15px;
+}
+
+    #box-input textarea{
+        margin: 10px;
+        padding: 12px;
+        margin-top: 100px;
+        height: 100%;
+        border: 2px solid #000000;
+        border-radius: 32px;
+        box-shadow: 5px 10px #8d127d;
+        outline: none !important;
+        resize: none;
+        background: #F3F5FC;
+        color: #0A3871;
+        font-family: 'Merienda', sans-serif;
+        font-style: normal;
+        font-size: 32px;
+        
+    }
+
+    ::placeholder{
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 150%;
+        color: #000000;
+    }
+
+    #note{
+        display: flex;
+        font-size: 12px;
+        opacity: 0.8;
+        color: #495057;
+    }
+
+    #note img{
+        width: 25px;
+        height: 25px;
+        align-self: center;
+    }
+
+    #note p{
+        margin-left: 25px;
+        font-size: 20px;
+        color: #000000;
+    }
+
+    #box-buttons{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        height: 45%;
+    }
+
+    .box-button-format{
+        width: 50%;
+        height: 100%;
+        padding: 0px;
+    }
+
+        #encriptar{
+            width: 80%;
+            height: 100%;
+            border-radius: 24px;
+            background: #6627db;
+        }
+
+        #encriptar:hover{
+            background: rgba(153, 3, 223, 0.9);
+            cursor: pointer;
+        }
+
+        #encriptar span{
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 19px;
+            text-align: center;
+            color: #FFFFFF;
+            margin: auto;
+        }
+
+        #desencriptar{ 
+            width: 80%;
+            height: 100%;
+            border-radius: 24px;
+            background: #8d127d;
+            box-sizing: border-box;
+            border-radius: 24px;
+        }
+
+        #desencriptar:hover{
+            background: rgba(60, 2, 99, 0.9);
+            cursor: pointer;
+        }
+
+        #desencriptar span{
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 19px;
+            text-align: center;           
+            color: #FFFFFF;
+            margin: auto;
+        }
+
+#box-results{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-radius: 32px;
+    box-shadow: 5px 10px #8d127d;
+    width: 43%;
+    border: 2px solid #000000;
+    line-height: normal ;
+}
+
+    #result{
+        width: 80%;
+        height: 95%;
+        font-size: 30px;
+        padding: 25px;
+        color: #4400ff;
+        display: none;
+        font-family: "Merienda", sans-serif;
+        
+    }
+
+    #image{
+        width: 336px;
+        height: 304px;
+        margin-top: 100px;
+        align-self: center;
+        display: block;
+    }
+
+    #text-default1{ 
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #ff0000;
+        align-self: center;
+        display: block;
+        line-height: normal;
+    }
+
+    #text-default1 p{
+        margin: 20px 0px 0px 0px;
+    }
+
+
+    #text-default2{
+        font-size: 20px;
+        line-height: 150%;
+        text-align: center;
+        color: #0080ff;
+        align-self: center;
+        display: block;
+    }
+
+    #button-copy{
+        width: 80%;
+        height: 15%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    #copiar{
+        width: 93%;
+        height: 69%;
+        margin-top: 10px;
+        background: rgb(4, 28, 240);
+        box-sizing: border-box;
+        border-radius: 24px;
+    }
+
+    #copiar:hover{
+        background: rgb(1, 200, 250);
+        cursor: pointer;
+    }
+
+    #copiar span{
+        font-size: 25px;
+        line-height: 19px;
+        text-align: center;           
+        color: #FFFFFF;
+        margin: auto;
+    }
+
+footer{
+    height: 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-size: 25px;
+}
+
+footer p{
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+footer ul{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer li{
+    list-style: none;
+    margin: 5px 10px 5px 10px;
+  }
+
+footer a{
+    text-decoration: none;
+    color: #002fff;
+    font-size: 35px;
+}
+
+@media (max-width: 1000px){
+    #main-container{
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    #box-logo{
+        margin-top: 30px;
+    }
+
+    .box-interaction-format{
+        width: 85vw;
+    }
+
+   #box-interaction{
+        width: 85vw;
+    }
+
+    .box-input-format{
+        width: 100%;
+    }
+
+    #box-input textarea{
+        margin-top: 10px;
+        height: 50vh;
+        width: 100%;
+    }
+
+    #encriptar{
+        width: 90%;
+        margin: 0% 5%;
+        padding: 5%;
+    }
+
+    #desencriptar{
+        width: 90%;
+        margin: 0% 5%;
+        padding: 5%;
+    }
+
+    #box-results{
+        width: 688px;
+        height: 133px;
+    }
+
+    #image{
+        display: none;
+    }
+
+    #box-results{
+        width: 85vw;
+        height: auto;
+    }
+
+    #text-default1 p{
+        margin: 5px;
+    }
+
+    #button-copy{
+        height: 80px;
+        margin-left: 5%;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 470px) and (max-height: 1050px){
+    html{
+        margin: 2vh 2vw 0vh 2vw;
+    }
+
+    .main-boxes{
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+    #box-input textarea{
+        margin-top: 10px;
+        height: 40vh;
+        width: 100%;
+    }
+    #box-buttons{
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    #encriptar{
+        width: 190%;
+        margin: 0% 10% 5% 5%;
+        padding: 10%;
+    }
+    #desencriptar{
+        width: 190%;
+        margin: 5% 10% 5% 5%;
+        padding: 10%;
+    }
+
+}
